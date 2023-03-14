@@ -1,0 +1,64 @@
+.interests {
+	margin-bottom: 25px;
+	width: 80vw;
+}
+.interests ul {
+	margin: 20px auto 0;
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.tldr {
+	/* background-color: rgb(242, 243, 247); */
+	border-radius: 15px;
+	padding: 15px;
+	margin: 20px 0;
+	font-size: 20px;
+	font-weight: bold;
+	/* font-family: 'Playfair Display', serif; */
+}
+
+.interests li {
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	background-color: rgb(242, 243, 247);
+	padding: 16px;
+	margin: 15px 10px;
+	font-size: 2.5vh;
+	border-radius: 30px;
+	width: 250px;
+	letter-spacing: 1.3px;
+	display: inline;
+}
+
+.industries {
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	width: fit-content;
+	padding: 20px;
+	border-radius: 15px;
+	margin-top: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+	.industries,
+	.interests {
+		margin: auto;
+		text-align: center;
+		align-items: center;
+	}
+
+	.interests ul {
+		padding: 0;
+		margin: auto;
+		text-align: center;
+		align-items: center;
+	}
+
+	.interests li {
+		width: 200px;
+		margin: 5px auto;
+		padding: 8px;
+		font-size: 11px;
+	}
+}
