@@ -1,24 +1,20 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import './Skills.css';
-
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { fal } from '@fortawesome/pro-light-svg-icons';
-import { far } from '@fortawesome/pro-regular-svg-icons';
-import { fat } from '@fortawesome/pro-thin-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import serverImg from '../Images/server.svg';
+import displayCode from '../Images/display-code.svg';
+import handshake from '../Images/handshake.svg';
+import flask from '../Images/flask.svg';
 
 function Skills() {
-	library.add(fal, far, fat);
-
 	return (
 		<div>
 			<Container className="skills">
 				<Row>
-					<h2>Skills</h2>
+					<h2 className="subtitle">Skills</h2>
 					<Col>
 						<h3>
-							<FontAwesomeIcon className="skills-icon" icon="fa-thin fa-display-code" />
+							<img className="skills-icon" src={displayCode} />
 						</h3>
 						<ul>
 							<li>HTML</li>
@@ -30,7 +26,7 @@ function Skills() {
 					</Col>
 					<Col>
 						<h3>
-							<FontAwesomeIcon className="skills-icon" icon="fa-thin fa-server" />
+							<img className="skills-icon" src={serverImg} />
 						</h3>
 						<ul>
 							<li>Python</li>
@@ -43,7 +39,7 @@ function Skills() {
 					</Col>
 					<Col>
 						<h3>
-							<FontAwesomeIcon className="skills-icon" icon="fa-thin fa-handshake" />
+							<img className="skills-icon" src={handshake} />
 						</h3>
 						<ul>
 							<li>Logical & Analytical Thinker</li>
@@ -55,7 +51,7 @@ function Skills() {
 					</Col>
 					<Col>
 						<h3>
-							<FontAwesomeIcon className="skills-icon" icon="fa-thin fa-flask" />
+							<img className="skills-icon" src={flask} />
 						</h3>
 						<ul>
 							<li>DraftSight/2D CAD</li>

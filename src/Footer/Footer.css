@@ -17,9 +17,20 @@
 	transform: scale(1.3);
 }
 
+#address,
+#phone {
+	position: absolute;
+	margin-left: 10px;
+	width: 25vh;
+}
+
 .icon-div {
 	display: inline-block;
 	position: relative;
+}
+
+.footer-icon {
+	height: 18px;
 }
 
 .hidden {
@@ -57,5 +68,13 @@
 		position: relative;
 		display: block;
 		margin-left: 5px;
+	}
+	#address,
+	#phone {
+		position: absolute;
+		margin-left: -100px;
+		margin-top: 25px;
+		width: 20vh;
+		font-size: 10px;
 	}
 }

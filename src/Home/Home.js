@@ -17,7 +17,7 @@ function Home() {
 		<div className="all-body">
 			<div className="home-page">
 				<Row className="header">
-					<h1>Hi, I'm Gabriela McCarthy</h1>
+					<h1 className="title">Hi, I'm Gabriela McCarthy</h1>
 					<div className="job-title">Software Engineer</div>
 					<div className="job-title">Full Stack Developer</div>
 				</Row>
@@ -25,7 +25,7 @@ function Home() {
 				<Container className="about-me">
 					<Row>
 						<Col>
-							<h2>About Me</h2>
+							<h2 className="subtitle">About Me</h2>
 							<div className="pg">
 								I'm a certified software engineer with a background in Biology and Postharvest
 								Technology. In February 2023, I completed the Springboard Software Engineering Career

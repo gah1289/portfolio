@@ -1,24 +1,18 @@
 import React, { useState, useEffect } from 'react';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { fal } from '@fortawesome/pro-light-svg-icons';
-import { far } from '@fortawesome/pro-regular-svg-icons';
-import { fat } from '@fortawesome/pro-thin-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import { Container, Col, Row } from 'reactstrap';
-import headshot from '../Images/headshot2.jpg';
+
 import './Interests.css';
 
 function Interests() {
-	library.add(fal, far, fat);
-
 	return (
 		<div>
 			<Container className="interests">
 				<Row>
 					<Col>
-						<h2>My "Why"</h2>
+						<h2 className="subtitle">My "Why"</h2>
 						<div>
 							<div className="pg">
 								I've always had an interest in working with computers and software. It started with
@@ -47,7 +41,7 @@ function Interests() {
 							TL;DR Former Lab Rat Plays with Lasers, Becomes Obsessed with Coding
 						</div>{' '}
 						<div className="industries">
-							<h2>Industries I'm Passionate About</h2>
+							<h2 className="subtitle">Industries I'm Passionate About</h2>
 							<div className="pg">
 								Once a science nerd, always a science nerd. After dedicating the last 13 years of my
 								career working towards sustainability, my values remain the same. It's important for me
@@ -60,7 +54,7 @@ function Interests() {
 								<li>Climate Tech</li>
 								<li>Biotech</li>
 								<li>Life Sciences</li>
-								<li>Animal Care</li>
+								<li>Pet Care</li>
 							</ul>
 						</div>
 					</Col>

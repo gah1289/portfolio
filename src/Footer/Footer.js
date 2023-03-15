@@ -1,19 +1,15 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState } from 'react';
 import './Footer.css';
 
-import { Container, Navbar, NavbarToggler, UncontrolledDropdown, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { fal } from '@fortawesome/pro-light-svg-icons';
-import { far } from '@fortawesome/pro-regular-svg-icons';
-import { fat } from '@fortawesome/pro-thin-svg-icons';
-import { fab } from '@fortawesome/free-brands-svg-icons';
+import { Navbar, NavItem, NavLink } from 'reactstrap';
+import locationDot from '../Images/location-dot.svg';
+import envelope from '../Images/envelope.svg';
+import gitHub from '../Images/github.svg';
+import linkedIn from '../Images/linkedin-in.svg';
+import phone from '../Images/phone.svg';
 import { CSSTransition } from 'react-transition-group';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
 function Footer() {
-	library.add(fal, far, fat, fab);
-
 	const [
 		addressHidden,
 		setAddressHidden
@@ -30,45 +26,39 @@ function Footer() {
 
 	return (
 		<div className="footer fixed-bottom">
-			<Navbar fill>
+			<Navbar fill id="footer">
 				<NavItem>
 					<NavLink className="nav-link" onClick={() => toggleAddressHidden()}>
 						<div className="icon-div">
-							<FontAwesomeIcon
-								icon={[
-									'fal',
-									'location-dot'
-								]}
-							/>
+							{' '}
+							<img className="footer-icon" src={locationDot} />
 						</div>
 					</NavLink>
 					<CSSTransition in={!addressHidden} timeout={300} classNames="hidden" unmountOnExit>
-						<div className="hidden">Andover, MA</div>
+						<span id="address">Andover, MA</span>
 					</CSSTransition>
 				</NavItem>
 				<NavItem>
 					<NavLink className="nav-link phone" onClick={() => togglePhoneHidden()} href="#">
 						<div className="icon-div">
-							<FontAwesomeIcon
-								icon={[
-									'fal',
-									'mobile'
-								]}
-							/>
+							<div className="icon-div">
+								{' '}
+								<img className="footer-icon" src={phone} />
+							</div>
 						</div>
 					</NavLink>
 					<CSSTransition in={!phoneHidden} timeout={300} classNames="hidden" unmountOnExit>
-						<div className="hidden">(603) 490-4664</div>
+						<span id="phone">(603) 490-4664</span>
 					</CSSTransition>
 				</NavItem>
 				<NavItem>
 					<NavLink className="nav-link" href="mailto:gabhmccarthy@gmail.com">
-						<FontAwesomeIcon
-							icon={[
-								'fal',
-								'envelope'
-							]}
-						/>
+						<div className="icon-div">
+							<div className="icon-div">
+								{' '}
+								<img className="footer-icon" src={envelope} />
+							</div>
+						</div>
 					</NavLink>
 				</NavItem>
 				<NavItem>
@@ -78,12 +68,10 @@ function Footer() {
 						target="_blank"
 						rel="noopener noreferrer"
 					>
-						<FontAwesomeIcon
-							icon={[
-								'fab',
-								'linkedin-in'
-							]}
-						/>
+						<div className="icon-div">
+							{' '}
+							<img className="footer-icon" src={linkedIn} />
+						</div>
 					</NavLink>
 				</NavItem>
 				<NavItem>
@@ -93,12 +81,10 @@ function Footer() {
 						target="_blank"
 						rel="noopener noreferrer"
 					>
-						<FontAwesomeIcon
-							icon={[
-								'fab',
-								'github'
-							]}
-						/>
+						<div className="icon-div">
+							{' '}
+							<img className="footer-icon" src={gitHub} />
+						</div>
 					</NavLink>
 				</NavItem>
 			</Navbar>
