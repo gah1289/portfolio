@@ -60,7 +60,7 @@ function Interests() {
 								<li>Climate Tech</li>
 								<li>Biotech</li>
 								<li>Life Sciences</li>
-								<li>Pet Care</li>
+								<li>Animal Care</li>
 							</ul>
 						</div>
 					</Col>

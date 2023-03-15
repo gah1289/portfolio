@@ -71,3 +71,22 @@
 .project-links a:hover {
 	text-decoration: overline underline #f2f3f7 3px;
 }
+
+@media only screen and (max-width: 600px) {
+	.projects {
+		margin-top: 20px;
+		padding-left: 0;
+		padding-bottom: 50px;
+	}
+
+	.project-tabs a {
+		font-size: 8px;
+	}
+	.project-links a {
+		font-size: 11px;
+	}
+
+	.skills ul {
+		width: 40vw;
+	}
+}

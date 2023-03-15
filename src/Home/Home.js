@@ -35,8 +35,8 @@ function Home() {
 							<div className="pg">
 								I'm a certified software engineer with a background in Biology and Postharvest
 								Technology. In February 2023, I completed the Springboard Software Engineering Career
-								Track Certificate Program. During that time, I mastered skills in front-end web
-								development, back-end web development, databases, and data structures and algorithms. {' '}
+								Track Certificate Program. During that time, I mastered skills in front-end and back-end
+								web development, databases, and data structures and algorithms. {' '}
 							</div>
 							<div className="pg">
 								I'm looking for opportunities as a software engineer in the Greater Boston/North Shore
@@ -44,25 +44,25 @@ function Home() {
 								a team.
 							</div>
 							<div className="pg">
-								When I'm not working I love to spend time with family and friends, unwind at Lake
-								Winnipesaukee, and try to keep up with my two crazy dogs Hopper and Hank.
+								When I'm not working I love to spend time with my husband, family, and friends, unwind
+								at Lake Winnipesaukee, and try to keep up with my two crazy dogs Hopper and Hank.
 							</div>
 							<div className="dogs">
 								{' '}
 								<div className="hopper">
 									<img src={hopper} />
 									<div id="hopper-text">
-										<span className="name">HOPPER, 5</span> <br /> -Loves bananas <br /> -Requires
-										an ice tax
-										<br /> -Afraid of spoons
+										<span className="name">HOPPER, 5</span> <br /> - Loves Bravo TV <br /> -
+										Requires an ice tax
+										<br /> - Afraid of spoons
 									</div>
 								</div>
 								<div className="hank">
 									<img src={hank} />
 									<div id="hank-text">
 										<span className="name">HANK, 6mo</span>
-										<br /> -Part shrimp <br /> -Can pick any lock <br /> -Very impressive set of
-										lungs
+										<br /> - Part Boxer part shrimp <br /> - Can pick any lock <br /> - Very
+										impressive set of lungs
 									</div>
 								</div>
 							</div>

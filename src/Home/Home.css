@@ -133,10 +133,12 @@ h2 {
 }
 
 @media only screen and (max-width: 600px) {
-	body {
+	body,
+	.all-body {
 		padding: 0;
 		width: 99vw;
 		font-size: 12px;
+		margin: 0;
 	}
 	h1 {
 		font-size: 12vw;
