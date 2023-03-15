@@ -1,0 +1,73 @@
+.projects {
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	width: fit-content;
+	padding: 20px;
+	border-radius: 15px;
+	margin-top: 20px;
+}
+
+.projects h2 {
+	margin: 10px 0;
+	font-family: 'Playfair Display', serif;
+}
+
+.projects ul {
+	margin-top: 20px;
+	text-align: left;
+	list-style-type: none;
+}
+.projects li {
+	margin-top: 7px;
+}
+
+.projects-icon {
+	font-size: 8vh;
+}
+
+.project-tabs {
+	font-family: 'Roboto Condensed';
+	text-transform: uppercase;
+	letter-spacing: 1.3px;
+}
+
+.project-tabs a {
+	color: gray;
+}
+.project-tabs a:hover {
+	color: rgb(0, 0, 0);
+}
+
+.card {
+	border: none;
+}
+.project-title {
+	font-size: 25px;
+	margin-top: 20px;
+	font-family: 'Playfair Display', serif;
+	margin-bottom: 20px;
+}
+
+.bolder {
+	font-weight: 800;
+	text-decoration: underline #f2f3f7 3px;
+	margin-right: 5px;
+}
+.project-links {
+	text-align: center;
+	margin: auto;
+	margin-top: 30px;
+	font-size: 28px;
+}
+.project-links a {
+	text-decoration: none;
+	font-size: 20px;
+	font-family: 'Roboto Condensed';
+	text-transform: uppercase;
+	letter-spacing: 1.3px;
+	border-radius: 15px;
+	line-height: 25px;
+	color: rgb(0, 0, 0);
+}
+.project-links a:hover {
+	text-decoration: overline underline #f2f3f7 3px;
+}

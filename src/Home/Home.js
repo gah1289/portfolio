@@ -12,6 +12,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Container, Col, Row } from 'reactstrap';
 import headshot from '../Images/headshot2.jpg';
 import Interests from '../Interests/Interests';
+import Projects from '../Projects/Projects';
+import hank from '../Images/Hank.png';
+import hopper from '../Images/Hopper.png';
 
 function Home() {
 	library.add(fal, far, fat);
@@ -44,6 +47,25 @@ function Home() {
 								When I'm not working I love to spend time with family and friends, unwind at Lake
 								Winnipesaukee, and try to keep up with my two crazy dogs Hopper and Hank.
 							</div>
+							<div className="dogs">
+								{' '}
+								<div className="hopper">
+									<img src={hopper} />
+									<div id="hopper-text">
+										<span className="name">HOPPER, 5</span> <br /> -Loves bananas <br /> -Requires
+										an ice tax
+										<br /> -Afraid of spoons
+									</div>
+								</div>
+								<div className="hank">
+									<img src={hank} />
+									<div id="hank-text">
+										<span className="name">HANK, 6mo</span>
+										<br /> -Part shrimp <br /> -Can pick any lock <br /> -Very impressive set of
+										lungs
+									</div>
+								</div>
+							</div>
 						</Col>
 						<Col>
 							{' '}
@@ -54,6 +76,7 @@ function Home() {
 			</div>
 			<Interests />
 			<Skills />
+			<Projects />
 			<Footer />
 		</div>
 	);

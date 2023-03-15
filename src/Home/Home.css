@@ -13,17 +13,22 @@ body {
 	margin: 20px;
 	border-radius: 20px;
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	padding-bottom: 50px;
 }
 
 h1 {
 	font-family: 'Playfair Display', serif;
 	font-size: 7vw;
 	letter-spacing: -3px;
+	padding-top: 40px;
 }
 
 h2 {
 	margin-top: 20px;
 	font-family: 'Playfair Display', serif;
+	letter-spacing: -1px;
+	position: relative;
+	text-align: center;
 }
 
 .pg {
@@ -31,7 +36,6 @@ h2 {
 }
 
 .job-title {
-	font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
 	background-color: rgb(242, 243, 247);
 	padding: 16px;
@@ -56,6 +60,76 @@ h2 {
 	width: 25vw;
 	min-width: 250px;
 	border-radius: 100%;
+}
+
+.dogs {
+	margin-top: 30px;
+	font-weight: 700;
+	height: 150px;
+	width: 100%;
+	position: relative;
+}
+.dogs img {
+	height: 120px;
+	filter: grayscale(100%);
+	margin: 0 20px;
+	transition: opacity 300ms, transform 300ms;
+}
+
+.name {
+	font-size: 13px;
+}
+
+.hank img:hover {
+	filter: none;
+	transform: rotate(20deg);
+}
+.hopper img:hover {
+	filter: none;
+	transform: rotate(-20deg);
+}
+
+.hank:hover,
+.hopper:hover {
+	color: rgba(0, 0, 0, 1);
+}
+
+.hank,
+.hopper {
+	color: rgba(0, 0, 0, 0);
+	line-height: 15px;
+	font-size: 11px;
+	position: relative;
+	display: inline;
+	transition: color 300ms, transform 300ms;
+	height: 100px;
+}
+
+#hopper-text,
+#hank-text {
+	position: absolute;
+	top: 75px;
+}
+
+#hopper-text:hover,
+#hank-text:hover {
+	color: rgba(0, 0, 0, 0);
+}
+
+#hopper-text {
+	right: 20%;
+}
+#hank-text {
+	left: 0;
+}
+
+#hopper:hover,
+#hank:hover {
+	display: inline;
+	margin-left: 0;
+	z-index: 1;
+	height: 100px;
+	transition: opacity 300ms, transform 300ms;
 }
 
 @media only screen and (max-width: 600px) {

@@ -30,12 +30,13 @@ function Interests() {
 							</div>
 						</div>
 						<div className="pg">
-							In 2018, the company I was working with started a project to develop peel/reseal lidding
-							films for salad trays so we could provide a more sustainable alternative to current plastic
-							packaging. I was responsible for learning how to operate the laser, developing and designing
-							all software jobs, and training the operators. Even though I had no experience with lasers
-							or CAD software, I was thrilled at the challenge. Soon enough, I was able to successfully
-							design CAD drawings and produce peel/reseal lidding films using our new laser system.
+							In 2018, the company I was working with started a project to use lasers to develop
+							specialized lidding films for salad trays. Our goal was to provide our customers with a more
+							sustainable alternative to current plastic packaging. I was responsible for learning how to
+							operate the laser, developing and designing all software jobs, and training the operators.
+							Even though I had no experience with lasers or CAD software, I was thrilled at the
+							challenge. Soon enough, I was able to successfully design CAD drawings and produce these
+							lidding films using our new laser system.
 						</div>{' '}
 						<div className="pg">
 							After that I developed a strong urge to expand my software engineering abilities and
@@ -51,7 +52,7 @@ function Interests() {
 								Once a science nerd, always a science nerd. After dedicating the last 13 years of my
 								career working towards sustainability, my values remain the same. It's important for me
 								to work for a company that makes a positive impact on the world and has a connected and
-								progressive culture.
+								progressive culture. Some industries I find exciting are:
 							</div>
 							<ul>
 								<li>AgTech</li>
