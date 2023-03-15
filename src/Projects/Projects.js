@@ -1,18 +1,11 @@
 import React, { useState } from 'react';
-import { Container, Nav, NavItem, NavLink, TabContent, TabPane } from 'reactstrap';
+import { Container, Nav, NavItem, NavLink, TabContent } from 'reactstrap';
 import './Projects.css';
-
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { fal } from '@fortawesome/pro-light-svg-icons';
-import { far } from '@fortawesome/pro-regular-svg-icons';
-import { fat } from '@fortawesome/pro-thin-svg-icons';
 
 import ProjectTab from './ProjectTab';
 import myProjects from './myProjects';
 
 function Projects() {
-	library.add(fal, far, fat);
-
 	const { postharvestApp, hiSpotApp, jobly, portfolio } = myProjects;
 
 	const [

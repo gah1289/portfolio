@@ -1,14 +1,10 @@
 import './Home.css';
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Footer from '../Footer/Footer';
 import Skills from '../Skills/Skills';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { fal } from '@fortawesome/pro-light-svg-icons';
-import { far } from '@fortawesome/pro-regular-svg-icons';
-import { fat } from '@fortawesome/pro-thin-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import { Container, Col, Row } from 'reactstrap';
 import headshot from '../Images/headshot2.jpg';
 import Interests from '../Interests/Interests';
@@ -17,8 +13,6 @@ import hank from '../Images/Hank.png';
 import hopper from '../Images/Hopper.png';
 
 function Home() {
-	library.add(fal, far, fat);
-
 	return (
 		<div className="all-body">
 			<div className="home-page">
