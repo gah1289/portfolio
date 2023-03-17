@@ -44,9 +44,12 @@
 @media only screen and (max-width: 600px) {
 	.industries,
 	.interests {
-		margin: auto;
 		text-align: center;
 		align-items: center;
+	}
+
+	.interests {
+		width: 95vw;
 	}
 
 	.interests ul {

@@ -5,16 +5,18 @@ font-family: 'Roboto Condensed', sans-serif; */
 
 body {
 	margin-bottom: 60px;
-	background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+	background-image: linear-gradient(to top, #ebe7f3 0%, #e3e3ff 99%, #e3eeff 100%);
 }
 
 .all-body {
 	background-image: linear-gradient(120deg, #fdfbfb 0%, #f7f9fa 100%);
-	margin: 20px;
+
+	margin: 20px auto;
 	border-radius: 20px;
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 	padding-bottom: 50px;
 	font-size: 17px;
+	max-width: 1500px;
 }
 
 .title {
@@ -139,7 +141,8 @@ body {
 	body,
 	.all-body {
 		padding: 0;
-		width: 99vw;
+		padding-bottom: 50px;
+		width: 100vw;
 		font-size: 14px;
 		margin: 0;
 	}
@@ -170,8 +173,8 @@ body {
 	}
 
 	.job-title {
-		font-size: 18px;
-		padding: 0;
+		font-size: 16px;
+		padding: 7px;
 		margin: 3px auto;
 	}
 	.col {

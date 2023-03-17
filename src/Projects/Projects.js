@@ -21,7 +21,7 @@ function Projects() {
 		<div>
 			<Container className="projects">
 				<div>
-					<h2>Projects</h2>
+					<h2 className="subtitle">Projects</h2>
 					<Nav tabs className="project-tabs">
 						<NavItem>
 							<NavLink

@@ -6,11 +6,6 @@
 	margin-top: 20px;
 }
 
-.projects h2 {
-	margin: 10px 0;
-	font-family: 'Playfair Display', serif;
-}
-
 .projects ul {
 	margin-top: 20px;
 	text-align: left;
@@ -107,8 +102,13 @@
 		padding-bottom: 50px;
 	}
 
+	.project-tabs {
+		flex-wrap: nowrap;
+	}
+
 	.project-tabs a {
-		font-size: 8px;
+		font-size: 12px;
+		text-align: center;
 	}
 	.project-links a {
 		font-size: 11px;
