@@ -5,16 +5,16 @@ font-family: 'Roboto Condensed', sans-serif; */
 
 body {
 	margin-bottom: 60px;
-	background-color: rgb(242, 243, 247);
-	font-size: 16px !important;
+	background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
 }
 
 .all-body {
-	background-color: rgba(255, 255, 255, 1);
+	background-image: linear-gradient(120deg, #fdfbfb 0%, #f7f9fa 100%);
 	margin: 20px;
 	border-radius: 20px;
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 	padding-bottom: 50px;
+	font-size: 17px;
 }
 
 .title {
@@ -39,10 +39,12 @@ body {
 
 .job-title {
 	text-transform: uppercase;
-	background-color: rgb(242, 243, 247);
+	color: #626d8d;
+
+	background-color: rgb(229, 230, 240);
 	padding: 16px;
 	margin: 15px auto;
-	font-size: 3vh;
+	font-size: 20px;
 	border-radius: 30px;
 	width: 300px;
 	letter-spacing: 1.3px;
@@ -60,8 +62,9 @@ body {
 
 .headshot {
 	width: 25vw;
-	min-width: 250px;
+	min-width: 175px;
 	border-radius: 100%;
+	margin-top: 50px;
 }
 
 .dogs {
@@ -93,14 +96,14 @@ body {
 
 .hank:hover,
 .hopper:hover {
-	color: rgba(0, 0, 0, 1);
+	color: #5b6cf9;
 }
 
 .hank,
 .hopper {
 	color: rgba(0, 0, 0, 0);
-	line-height: 15px;
-	font-size: 11px;
+	line-height: 17px;
+	font-size: 13px;
 	position: relative;
 	display: inline;
 	transition: color 300ms, transform 300ms;
@@ -117,14 +120,12 @@ body {
 #hank-text:hover {
 	color: rgba(0, 0, 0, 0);
 }
-
 #hopper-text {
 	right: 20%;
 }
 #hank-text {
 	left: 0;
 }
-
 #hopper:hover,
 #hank:hover {
 	display: inline;
@@ -156,7 +157,12 @@ body {
 	}
 
 	.headshot {
-		margin-top: 15px;
+		margin-top: 25px;
+		top: 100px;
+	}
+
+	.headshot {
+		width: 10vw;
 	}
 
 	.header {

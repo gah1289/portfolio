@@ -11,6 +11,7 @@ import Interests from '../Interests/Interests';
 import Projects from '../Projects/Projects';
 import hank from '../Images/Hank.png';
 import hopper from '../Images/Hopper.png';
+import Education from '../Education/Education';
 
 function Home() {
 	return (
@@ -24,6 +25,10 @@ function Home() {
 
 				<Container className="about-me">
 					<Row>
+						<Col>
+							{' '}
+							<img className="headshot" src={headshot} />
+						</Col>
 						<Col>
 							<h2 className="subtitle">About Me</h2>
 							<div className="pg">
@@ -61,16 +66,13 @@ function Home() {
 								</div>
 							</div>
 						</Col>
-						<Col>
-							{' '}
-							<img className="headshot" src={headshot} />
-						</Col>
 					</Row>
 				</Container>
 			</div>
 			<Interests />
 			<Skills />
 			<Projects />
+			<Education />
 			<Footer />
 		</div>
 	);

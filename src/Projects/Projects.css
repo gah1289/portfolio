@@ -20,6 +20,11 @@
 	margin-top: 7px;
 }
 
+.curr-project a {
+	color: #5b6cf9;
+	background-color: red;
+}
+
 .projects-icon {
 	font-size: 8vh;
 }
@@ -31,10 +36,21 @@
 }
 
 .project-tabs a {
-	color: gray;
+	color: rgba(112, 128, 144);
+	transition: 0.3s;
 }
+
 .project-tabs a:hover {
-	color: rgb(0, 0, 0);
+	color: #646ff7;
+}
+
+.project-tab .row,
+.project-tab .row .col {
+	background-color: rgba(255, 255, 255, 1);
+}
+
+.project-bg {
+	background-color: rgba(255, 255, 255, 1);
 }
 
 .card {
@@ -58,18 +74,30 @@
 	margin-top: 30px;
 	font-size: 28px;
 }
+
 .project-links a {
+	margin: 10px 0 !important;
 	text-decoration: none;
 	font-size: 20px;
+	display: block;
+	width: 18vw;
+	text-align: center;
 	font-family: 'Roboto Condensed';
 	text-transform: uppercase;
 	letter-spacing: 1.3px;
-	border-radius: 15px;
+	border-radius: 30px;
 	line-height: 25px;
-	color: rgb(0, 0, 0);
+	color: #646ff7;
+	transition: 0.3s;
+	padding: 10px;
 }
+
 .project-links a:hover {
-	text-decoration: overline underline #f2f3f7 3px;
+	background-position: right center;
+	border: none;
+	font-weight: bold;
+	letter-spacing: 1.7px;
+	padding: 10px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -84,6 +112,7 @@
 	}
 	.project-links a {
 		font-size: 11px;
+		width: 40vw;
 	}
 
 	.skills ul {

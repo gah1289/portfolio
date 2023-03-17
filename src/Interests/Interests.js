@@ -43,10 +43,10 @@ function Interests() {
 						<div className="industries">
 							<h2 className="subtitle">Industries I'm Passionate About</h2>
 							<div className="pg">
-								Once a science nerd, always a science nerd. After dedicating the last 13 years of my
-								career working towards sustainability, my values remain the same. It's important for me
-								to work for a company that makes a positive impact on the world and has a connected and
-								progressive culture. Some industries I find exciting are:
+								After dedicating the last 13 years of my career working towards sustainability, my
+								values remain the same. It's important for me to work for a company that makes a
+								positive impact on the world and has a connected and progressive culture. Some
+								industries I find exciting are:
 							</div>
 							<ul>
 								<li>AgTech</li>
@@ -54,7 +54,7 @@ function Interests() {
 								<li>Climate Tech</li>
 								<li>Biotech</li>
 								<li>Life Sciences</li>
-								<li>Pet Care</li>
+								<li>Animal Care</li>
 							</ul>
 						</div>
 					</Col>

@@ -7,9 +7,9 @@ function ProjectTab({ project }) {
 
 	return (
 		<TabPane tabId={tab}>
-			<Row>
+			<Row className="project-bg">
 				<Col sm="6">
-					<Card body>
+					<Card className="project-bg" body>
 						<CardTitle className="project-title">{title}</CardTitle>
 						<CardText>{description}</CardText>
 						<CardText>
@@ -37,10 +37,17 @@ function ProjectTab({ project }) {
 					</Card>
 				</Col>
 				<Col sm="6">
-					<Card body>
+					<Card className="project-bg" body>
 						<CardImg alt="Card image cap" src={imgSrc} top width="100%" />
 						<CardText className="project-links">
-							<ul> {links.map((link) => <CardLink href={link.link}>{link.name}</CardLink>)}</ul>
+							<ul>
+								{' '}
+								{links.map((link) => (
+									<CardLink className="site-link" href={link.link}>
+										{link.name}
+									</CardLink>
+								))}
+							</ul>
 						</CardText>
 					</Card>
 				</Col>

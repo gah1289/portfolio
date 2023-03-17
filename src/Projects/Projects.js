@@ -12,17 +12,10 @@ function Projects() {
 		active,
 		setActive
 	] = useState('1');
-	const [
-		showProject,
-		setShowProject
-	] = useState(postharvestApp);
 
 	const changeTab = (project) => {
 		setActive(project.tab);
-		setShowProject(project);
 	};
-
-	console.log('active', active, showProject);
 
 	return (
 		<div>
@@ -32,7 +25,7 @@ function Projects() {
 					<Nav tabs className="project-tabs">
 						<NavItem>
 							<NavLink
-								className={active === postharvestApp.tab ? 'active' : ''}
+								className={active === postharvestApp.tab ? 'active curr-project' : ''}
 								onClick={() => changeTab(postharvestApp)}
 							>
 								Postharvest App
