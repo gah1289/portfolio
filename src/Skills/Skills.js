@@ -55,9 +55,10 @@ function Skills() {
 						</h3>
 						<ul>
 							<li>DraftSight/2D CAD</li>
+							<li>Adobe lllustrator and Photoshop</li>
 							<li>Laboratory Research</li>
 							<li>Plant Physiology</li>
-							<li>Biology</li>
+
 							<li>Quality Assurance</li>
 						</ul>
 					</Col>

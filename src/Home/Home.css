@@ -5,12 +5,12 @@ font-family: 'Roboto Condensed', sans-serif; */
 
 body {
 	margin-bottom: 60px;
-	background-image: linear-gradient(to top, #ebe7f3 0%, #e3e3ff 99%, #e3eeff 100%);
+
+	background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
 
 .all-body {
 	background-image: linear-gradient(120deg, #fdfbfb 0%, #f7f9fa 100%);
-
 	margin: 20px auto;
 	border-radius: 20px;
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -19,30 +19,94 @@ body {
 	max-width: 1500px;
 }
 
+.header {
+	align-items: center;
+	text-align: left;
+	max-width: 99vw;
+	margin-bottom: 75px;
+	padding: 0 10px;
+	margin-left: 30px;
+}
+
 .title {
-	font-family: 'Playfair Display', serif;
-	font-size: 7vw;
+	font-size: min(4.75vw, 100px);
+	font-weight: 600;
 	letter-spacing: -3px;
-	padding-top: 40px;
+}
+
+.title-contact {
+	padding-top: 80px;
+}
+
+.slogan {
+	font-size: min(3vw, 75px);
+	letter-spacing: -1px;
+	font-weight: 600;
+}
+
+/* text morph */
+
+.wrapper span {
+	display: inline-flex;
+	margin: 0;
+	vertical-align: top;
+	max-width: 100%;
+	width: fit-content;
+}
+
+.words {
+	color: #5b6cf9;
+	animation: word 15s infinite ease-in-out;
+	position: absolute;
+	display: flex;
+	max-width: 100%;
+	padding-left: 10px;
+}
+
+.title0 {
+	animation-delay: -15s;
+}
+
+.title1 {
+	animation-delay: -10s;
+}
+
+.title2 {
+	animation-delay: -5s;
+}
+
+@keyframes word {
+	0%,
+	5%,
+	100% {
+		filter: blur(0px);
+		opacity: 1;
+	}
+	20%,
+	80% {
+		/* filter: blur(15px); */
+		opacity: 0;
+	}
 }
 
 .subtitle {
 	margin-top: 20px;
-	font-family: 'Playfair Display', serif;
 	letter-spacing: -1px;
 	position: relative;
 	text-align: center;
 	font-size: 40px;
+	font-weight: 700;
 }
 
 .pg {
 	margin-top: 10px;
 }
 
+.btn-slide2,
 .job-title {
 	text-transform: uppercase;
 	color: #626d8d;
-
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 10px 0px;
 	background-color: rgb(229, 230, 240);
 	padding: 16px;
 	margin: 15px auto;
@@ -52,21 +116,77 @@ body {
 	letter-spacing: 1.3px;
 }
 
-.header {
-	align-items: center;
-	text-align: center;
-	margin: 15px auto;
-	max-width: 99vw;
-}
 .about-me {
-	margin: 25px;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	width: fit-content;
+	padding: 20px 80px 75px;
+	border-radius: 15px;
+	margin-top: 50px;
+}
+
+.headshot img {
+	height: 375px;
+	/* min-width: 175px; */
+	position: absolute;
+	margin-top: 19px;
+	margin-left: 40px;
+	z-index: 2;
 }
 
 .headshot {
-	width: 25vw;
-	min-width: 175px;
-	border-radius: 100%;
-	margin-top: 50px;
+	left: 20px;
+	right: auto;
+	top: 0;
+}
+
+.headshot-container {
+	position: relative;
+	height: 400px;
+	width: 400px;
+	margin: auto;
+
+	margin-top: 80px;
+	padding-top: 20px;
+}
+
+.background-headshot2,
+.background-headshot3,
+.background-headshot4 {
+	position: absolute;
+	border-radius: 500px;
+	z-index: 0;
+}
+
+.background-headshot1 {
+	position: relative;
+	z-index: 2;
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 15px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	height: 375px;
+	width: 340px;
+	margin: auto;
+}
+.background-headshot2 {
+	background-color: #8bc6ec;
+	background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
+
+	top: -5px;
+	height: 200px;
+	width: 200px;
+}
+
+.background-headshot4 {
+	background-color: #8ec5fc;
+	background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+
+	right: 10px;
+	bottom: -15px;
+	height: 150px;
+	width: 150px;
 }
 
 .dogs {
@@ -94,6 +214,104 @@ body {
 .hopper img:hover {
 	filter: none;
 	transform: rotate(-20deg);
+}
+
+/* https://codepen.io/ssk84/pen/LYpzYZX */
+#wrap {
+	text-align: center;
+	text-transform: uppercase;
+	position: absolute;
+	bottom: 30px;
+	left: 60px;
+}
+
+.btn-slide2 {
+	position: relative;
+	display: inline-block;
+	height: 50px;
+	width: 250px;
+	line-height: 50px;
+	padding: 0;
+	margin: 10px;
+	transition: .5s;
+}
+
+.btn-slide2:hover {
+	background: rgb(204, 152, 218);
+	background: linear-gradient(90deg, rgba(204, 152, 218, 1) 0%, rgba(91, 108, 249, 1) 100%);
+	outline: rgba(0, 0, 0, 0);
+}
+
+.btn-slide:hover span.circle,
+.btn-slide2:hover span.circle2 {
+	left: 100%;
+	margin-left: -45px;
+	background-color: #fdfdfd;
+}
+
+.btn-slide2:hover span.circle2 {
+	color: #5b6cf9;
+}
+
+.btn-slide2:hover span.title2 {
+	left: 40px;
+	opacity: 0;
+}
+
+.btn-slide:hover span.title-hover,
+.btn-slide2:hover span.title-hover2 {
+	opacity: 1;
+	left: 40px;
+}
+
+.btn-slide2 span.circle2 {
+	display: block;
+	color: rgb(229, 230, 240);
+	position: absolute;
+	float: left;
+	margin: 5px;
+	line-height: 42px;
+	height: 40px;
+	width: 40px;
+	top: 0;
+	left: 0;
+	transition: .5s;
+	border-radius: 50%;
+}
+
+.btn-slide2 span.circle2 {
+	visibility: hidden;
+}
+.btn-slide2:hover span.circle2 {
+	visibility: visible;
+}
+
+.btn-slide span.title,
+.btn-slide span.title-hover,
+.btn-slide2 span.title2,
+.btn-slide2 span.title-hover2 {
+	position: absolute;
+	left: 90px;
+	text-align: center;
+	margin: 0 auto;
+	transition: .5s;
+}
+
+.btn-slide2 span.title2,
+.btn-slide2 span.title-hover2 {
+	color: #626d8d;
+	left: 80px;
+}
+
+.btn-slide span.title-hover,
+.btn-slide2 span.title-hover2 {
+	left: 80px;
+	opacity: 0;
+}
+
+.btn-slide span.title-hover,
+.btn-slide2 span.title-hover2 {
+	color: #fff;
 }
 
 .hank:hover,
@@ -147,25 +365,64 @@ body {
 		margin: 0;
 	}
 	.title {
-		font-size: 12vw;
+		font-size: 10vw;
+		text-align: center;
+		/* padding: 0; */
 	}
 
-	.subtitle {
-		font-size: 8vw;
+	.title-contact {
+		padding-top: 20px;
+	}
+
+	.subtitle,
+	.slogan {
+		font-size: 7vw;
+		margin-left: 15px;
 	}
 
 	.about-me {
-		margin: 0;
-		margin-bottom: 20px;
+		margin: 20px auto;
+		width: 95vw;
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 
 	.headshot {
 		margin-top: 25px;
-		top: 100px;
+		top: 4px;
+		left: -10px;
+		margin-left: auto;
 	}
 
-	.headshot {
-		width: 10vw;
+	.headshot-container {
+		position: relative;
+
+		height: 200px;
+		width: 200px;
+		margin-left: 22.5vw;
+		margin-top: 0;
+		padding-top: 0;
+	}
+
+	.background-headshot1 {
+		height: 200px;
+		width: 150px;
+	}
+
+	.background-headshot2 {
+		height: 110px;
+		width: 110px;
+		top: -10px;
+	}
+	.background-headshot4 {
+		height: 80px;
+		width: 80px;
+		bottom: -10px;
+		right: 15px;
+	}
+
+	.headshot img {
+		height: 175px;
 	}
 
 	.header {
@@ -179,5 +436,15 @@ body {
 	}
 	.col {
 		width: 99vw;
+	}
+
+	.hank,
+	.hopper {
+		font-size: 12px;
+		height: 150px;
+	}
+	.hank img,
+	.hopper img {
+		height: 85px;
 	}
 }

@@ -17,7 +17,6 @@
 
 .curr-project a {
 	color: #5b6cf9;
-	background-color: red;
 }
 
 .projects-icon {
@@ -54,15 +53,18 @@
 .project-title {
 	font-size: 25px;
 	margin-top: 20px;
-	font-family: 'Playfair Display', serif;
+	text-decoration: underline rgba(171, 191, 245, 0.3) 2px;
+	font-weight: 600;
 	margin-bottom: 20px;
 }
 
 .bolder {
 	font-weight: 800;
-	text-decoration: underline #f2f3f7 3px;
+
 	margin-right: 5px;
 }
+
+/* links CSS- https://codepen.io/brenden/pen/RNZXqx */
 .project-links {
 	text-align: center;
 	margin: auto;
@@ -70,36 +72,59 @@
 	font-size: 28px;
 }
 
-.project-links a {
-	margin: 10px 0 !important;
-	text-decoration: none;
-	font-size: 20px;
-	display: block;
-	width: 18vw;
+.project-links a,
+.project-links a:hover,
+.project-links a:visited,
+.project-links a:active {
 	text-align: center;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	position: relative;
+	transition: 0.5s ease;
+	text-decoration: none;
+	line-height: 25px;
+	display: block;
+	margin: 20px 0 !important;
+	color: #000;
 	font-family: 'Roboto Condensed';
 	text-transform: uppercase;
 	letter-spacing: 1.3px;
-	border-radius: 30px;
-	line-height: 25px;
-	color: #646ff7;
-	transition: 0.3s;
-	padding: 10px;
+	font-size: 20px;
 }
 
 .project-links a:hover {
-	background-position: right center;
-	border: none;
-	font-weight: bold;
+	color: #646ff7;
 	letter-spacing: 1.7px;
-	padding: 10px;
+}
+
+.project-links a:after {
+	content: "";
+	transition: 0.5s all ease;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	position: absolute;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	bottom: -0.25em;
+	height: 2px;
+	width: 0;
+	background: rgba(171, 191, 245, 0.3);
+	/* background: #646ff7; */
+}
+.project-links a:hover:after {
+	width: 100%;
 }
 
 @media only screen and (max-width: 600px) {
+	.project-bg {
+		width: 99vw;
+	}
 	.projects {
 		margin-top: 20px;
 		padding-left: 0;
 		padding-bottom: 50px;
+		width: 99%;
 	}
 
 	.project-tabs {
@@ -111,8 +136,12 @@
 		text-align: center;
 	}
 	.project-links a {
-		font-size: 11px;
+		font-size: 14px;
 		width: 40vw;
+	}
+
+	.project-links a:hover {
+		font-size: 11px;
 	}
 
 	.skills ul {

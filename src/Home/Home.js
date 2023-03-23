@@ -1,34 +1,60 @@
 import './Home.css';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Footer from '../Footer/Footer';
 import Skills from '../Skills/Skills';
-
+import $ from 'jquery';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { Container, Col, Row } from 'reactstrap';
-import headshot from '../Images/headshot2.jpg';
+import headshot from '../Images/headshot3.png';
 import Interests from '../Interests/Interests';
 import Projects from '../Projects/Projects';
 import hank from '../Images/Hank.png';
 import hopper from '../Images/Hopper.png';
-import Education from '../Education/Education';
+
+import Contact from '../Contact/Contact';
 
 function Home() {
+	// text morphing - https://codepen.io/sreeharshrajan/pen/bGrYNLe
+	let terms = [
+		' front-end developer',
+		' full stack developer',
+		' software engineer'
+	];
+
 	return (
 		<div className="all-body">
 			<div className="home-page">
 				<Row className="header">
-					<h1 className="title">Hi, I'm Gabriela McCarthy</h1>
-					<div className="job-title">Software Engineer</div>
-					<div className="job-title">Full Stack Developer</div>
+					<Col className="title-contact">
+						<h1 className="title">I'm Gabriela McCarthy</h1>
+						<div className="slogan wrapper">
+							{' '}
+							and I'm a
+							{terms.map((title, i) => <span className={`words title${i}`}> {title}</span>)}
+						</div>
+						<Contact />
+					</Col>
+					<Col>
+						{' '}
+						<div className="headshot-container">
+							<div className="background-headshot1"> </div>
+							<div className="background-headshot2"> </div>
+							<div className="background-headshot3"> </div>
+							<div className="background-headshot4"> </div>
+							<div className="headshot">
+								{' '}
+								<img className="headshot" src={headshot} />{' '}
+							</div>{' '}
+						</div>
+					</Col>
 				</Row>
 
+				<Skills />
+
+				<Projects />
 				<Container className="about-me">
 					<Row>
-						<Col>
-							{' '}
-							<img className="headshot" src={headshot} />
-						</Col>
 						<Col>
 							<h2 className="subtitle">About Me</h2>
 							<div className="pg">
@@ -70,10 +96,7 @@ function Home() {
 				</Container>
 			</div>
 			<Interests />
-			<Skills />
-			<Projects />
-			<Education />
-			<Footer />
+			{/* <Footer /> */}
 		</div>
 	);
 }

@@ -11,7 +11,7 @@ function Interests() {
 		<div>
 			<Container className="interests">
 				<Row>
-					<Col>
+					<div className="my-why">
 						<h2 className="subtitle">My "Why"</h2>
 						<div>
 							<div className="pg">
@@ -40,24 +40,23 @@ function Interests() {
 						<div className=" pg tldr">
 							TL;DR Former Lab Rat Plays with Lasers, Becomes Obsessed with Coding
 						</div>{' '}
-						<div className="industries">
-							<h2 className="subtitle">Industries I'm Passionate About</h2>
-							<div className="pg">
-								After dedicating the last 13 years of my career working towards sustainability, my
-								values remain the same. It's important for me to work for a company that makes a
-								positive impact on the world and has a connected and progressive culture. Some
-								industries I find exciting are:
-							</div>
-							<ul>
-								<li>AgTech</li>
-								<li>Food & Beverage</li>
-								<li>Climate Tech</li>
-								<li>Biotech</li>
-								<li>Life Sciences</li>
-								<li>Animal Care</li>
-							</ul>
+					</div>
+					<div className="industries">
+						<h2 className="subtitle">Industries I'm Passionate About</h2>
+						<div className="pg">
+							After dedicating the last 13 years of my career working towards sustainability, my values
+							remain the same. It's important for me to work for a company that makes a positive impact on
+							the world and has a connected and progressive culture. Some industries I find exciting are:
 						</div>
-					</Col>
+						<ul>
+							<li>AgTech</li>
+							<li>Food & Beverage</li>
+							<li>Climate Tech</li>
+							<li>Biotech</li>
+							<li>Life Sciences</li>
+							<li>Animal Care</li>
+						</ul>
+					</div>
 				</Row>
 			</Container>
 		</div>
