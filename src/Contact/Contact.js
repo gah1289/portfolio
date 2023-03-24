@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Contact.css';
 
-import { Navbar, NavItem, NavLink, Spinner } from 'reactstrap';
+import { Navbar, NavItem, NavLink } from 'reactstrap';
 import locationDot from '../Images/location-dot.svg';
 import envelope from '../Images/envelope.svg';
 import gitHub from '../Images/github.svg';
@@ -10,7 +10,6 @@ import phone from '../Images/phone.svg';
 import download from '../Images/file-arrow-down-light.svg';
 import { CSSTransition } from 'react-transition-group';
 import axios from 'axios';
-import resume from '../files/GMcCarthyResume.pdf';
 
 function Contact() {
 	const [
@@ -43,14 +42,12 @@ function Contact() {
 			// simulate a delay
 			axios.get('/files/GMcCarthyResume.pdf', { responseType: 'blob' }).then((response) => {
 				// Get pokemon data
-				console.log(response);
+
 				setResume(response.request.responseURL); //set pokemon state
 				setLoading(false); //set loading state
 			});
 		}, 3000);
 	}, []);
-
-	console.log({ resume });
 
 	if (isLoading) {
 		return (
