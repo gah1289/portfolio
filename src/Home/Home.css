@@ -206,6 +206,27 @@ body {
 	transform: rotate(-20deg);
 }
 
+.loading {
+	position: relative;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	color: #8abae5;
+	margin: 50px 8px;
+}
+.loading-dots {
+	text-align: center;
+}
+
+#spin2 {
+	animation-delay: 0.1s;
+	color: #8aabdf;
+}
+#spin3 {
+	animation-delay: 0.2s;
+	color: #9599e2;
+}
+
 /* https://codepen.io/ssk84/pen/LYpzYZX */
 #wrap {
 	text-align: center;

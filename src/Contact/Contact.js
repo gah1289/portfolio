@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Contact.css';
-
-import { Navbar, NavItem, NavLink } from 'reactstrap';
+import { Navbar, NavItem, NavLink, Spinner } from 'reactstrap';
 import locationDot from '../Images/location-dot.svg';
 import envelope from '../Images/envelope.svg';
 import gitHub from '../Images/github.svg';
@@ -41,26 +40,32 @@ function Contact() {
 		setTimeout(() => {
 			// simulate a delay
 			axios.get('/files/GMcCarthyResume.pdf', { responseType: 'blob' }).then((response) => {
-				// Get pokemon data
-
-				setResume(response.request.responseURL); //set pokemon state
+				setResume(response.request.responseURL);
 				setLoading(false); //set loading state
 			});
 		}, 3000);
 	}, []);
 
+	setTimeout(() => {
+		document.getElementById('animation-overlay').style.display = 'block';
+	}, 1500);
+
+	setTimeout(() => {
+		document.getElementById('animation-overlay').style.display = 'none';
+	}, 5500);
+
 	if (isLoading) {
 		return (
-			<div
-				style={{
-					display        : 'flex',
-					flexDirection  : 'column',
-					alignItems     : 'center',
-					justifyContent : 'center',
-					height         : '100vh'
-				}}
-			>
-				Loading the data {console.log('loading state')}
+			<div className="loading-dots">
+				<Spinner type="grow" className="loading">
+					{' '}
+				</Spinner>
+				<Spinner id="spin2" type="grow" className="loading">
+					{' '}
+				</Spinner>
+				<Spinner id="spin3" type="grow" className="loading">
+					{' '}
+				</Spinner>
 			</div>
 		);
 	}
