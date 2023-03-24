@@ -357,7 +357,6 @@ body {
 @media only screen and (max-width: 600px) {
 	body,
 	.all-body {
-		font-family: 'Roboto';
 		padding: 0;
 		padding-bottom: 50px;
 		width: 100vw;
@@ -365,7 +364,9 @@ body {
 		margin: 0;
 	}
 	.title {
+		font-family: 'Nunito';
 		font-size: 35px;
+		font-weight: 400;
 		/* text-align: center; */
 		margin-left: 0;
 	}
@@ -376,6 +377,8 @@ body {
 
 	.subtitle,
 	.slogan {
+		font-weight: 400;
+		font-family: 'Nunito';
 		font-size: 22px;
 		margin-left: 0px;
 		width: 100%;
