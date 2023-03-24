@@ -43,7 +43,7 @@ function Footer() {
 						<div className="icon-div">
 							<div className="icon-div">
 								{' '}
-								<img className="footer-icon" src={phone} />
+								<img className="footer-icon" src={phone} alt="phone icon" />
 							</div>
 						</div>
 					</NavLink>
@@ -56,7 +56,7 @@ function Footer() {
 						<div className="icon-div">
 							<div className="icon-div">
 								{' '}
-								<img className="footer-icon" src={envelope} />
+								<img className="footer-icon" src={envelope} alt="envelope icon" />
 							</div>
 						</div>
 					</NavLink>
@@ -70,7 +70,7 @@ function Footer() {
 					>
 						<div className="icon-div">
 							{' '}
-							<img className="footer-icon" src={linkedIn} />
+							<img className="footer-icon" src={linkedIn} alt="linkedin icon" />
 						</div>
 					</NavLink>
 				</NavItem>
@@ -83,7 +83,7 @@ function Footer() {
 					>
 						<div className="icon-div">
 							{' '}
-							<img className="footer-icon" src={gitHub} />
+							<img className="footer-icon" src={gitHub} alt="github icon" />
 						</div>
 					</NavLink>
 				</NavItem>

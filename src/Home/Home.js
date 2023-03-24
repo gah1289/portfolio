@@ -44,7 +44,7 @@ function Home() {
 							<div className="background-headshot4"> </div>
 							<div className="headshot">
 								{' '}
-								<img className="headshot" src={headshot} />{' '}
+								<img className="headshot" src={headshot} alt="Gabriela headshot" />{' '}
 							</div>{' '}
 						</div>
 					</Col>
@@ -75,7 +75,7 @@ function Home() {
 							<div className="dogs">
 								{' '}
 								<div className="hopper">
-									<img src={hopper} />
+									<img src={hopper} alt="picture of Hopper" />
 									<div id="hopper-text">
 										<span className="name">HOPPER, 5</span> <br /> - Loves Bravo TV <br /> -
 										Requires an ice tax
@@ -83,7 +83,7 @@ function Home() {
 									</div>
 								</div>
 								<div className="hank">
-									<img src={hank} />
+									<img src={hank} alt="picture of Hank" />
 									<div id="hank-text">
 										<span className="name">HANK, 6mo</span>
 										<br /> - Part Boxer part shrimp <br /> - Can pick any lock <br /> - Very

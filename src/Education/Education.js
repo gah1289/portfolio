@@ -1,10 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import './Education.css';
-import serverImg from '../Images/server.svg';
-import displayCode from '../Images/display-code.svg';
-import handshake from '../Images/handshake.svg';
-import flask from '../Images/flask.svg';
 
 function Education() {
 	return (
@@ -59,55 +55,6 @@ function Education() {
 						<Row>May 2012</Row>
 					</Col>
 				</Row>
-				{/* <Row className="education-row">
-					<Col>Certificate</Col>
-					<Col>Software Engineering Career Track</Col>
-					<Col>Springboard</Col>
-					<Col>Remote</Col>
-					<Col>Feb 2023</Col>
-				</Row>
-				<Row className="education-row">
-					<Col>M.S.</Col>
-					<Col>Horticulture</Col>
-					<Col>Auburn University</Col>
-					<Col>Auburn, AL</Col>
-					<Col>Aug 2015</Col>
-				</Row>
-				<Row className="education-row">
-					<Col>B.S.</Col>
-					<Col>Biology</Col>
-					<Col>University of New Hampshire</Col>
-					<Col>Durham, NH</Col>
-					<Col>May 2012</Col> */}
-				{/* </Row> */}
-				{/* <Row className="ed-title">
-					<Col>Degree Type</Col>
-					<Col>Study</Col>
-					<Col>Institution</Col>
-					<Col>Location</Col>
-					<Col>Graduation Date</Col>
-				</Row>
-				<Row className="education-row">
-					<Col>Certificate</Col>
-					<Col>Software Engineering Career Track</Col>
-					<Col>Springboard</Col>
-					<Col>Remote</Col>
-					<Col>Feb 2023</Col>
-				</Row>
-				<Row className="education-row">
-					<Col>M.S.</Col>
-					<Col>Horticulture</Col>
-					<Col>Auburn University</Col>
-					<Col>Auburn, AL</Col>
-					<Col>Aug 2015</Col>
-				</Row>
-				<Row className="education-row">
-					<Col>B.S.</Col>
-					<Col>Biology</Col>
-					<Col>University of New Hampshire</Col>
-					<Col>Durham, NH</Col>
-					<Col>May 2012</Col>
-				</Row> */}
 			</Container>
 		</div>
 	);

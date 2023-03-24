@@ -38,7 +38,7 @@ function ProjectTab({ project }) {
 				</Col>
 				<Col sm="6">
 					<Card className="project-bg" body>
-						<CardImg alt="Card image cap" src={imgSrc} top width="100%" />
+						<CardImg src={imgSrc} alt={`picture of ${title}`} top width="100%" />
 						<CardText className="project-links">
 							<ul>
 								{' '}

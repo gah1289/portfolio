@@ -14,7 +14,7 @@ function Skills() {
 					<h2 className="subtitle">Skills</h2>
 					<Col>
 						<h3>
-							<img className="skills-icon" src={displayCode} />
+							<img className="skills-icon" src={displayCode} alt="fe skills icon" />
 						</h3>
 						<ul>
 							<li>HTML</li>
@@ -26,7 +26,7 @@ function Skills() {
 					</Col>
 					<Col>
 						<h3>
-							<img className="skills-icon" src={serverImg} />
+							<img className="skills-icon" src={serverImg} alt="be skills icon" />
 						</h3>
 						<ul>
 							<li>Python</li>
@@ -39,7 +39,7 @@ function Skills() {
 					</Col>
 					<Col>
 						<h3>
-							<img className="skills-icon" src={handshake} />
+							<img className="skills-icon" src={handshake} alt="soft skills icon" />
 						</h3>
 						<ul>
 							<li>Logical & Analytical Thinker</li>
@@ -51,14 +51,13 @@ function Skills() {
 					</Col>
 					<Col>
 						<h3>
-							<img className="skills-icon" src={flask} />
+							<img className="skills-icon" src={flask} alt="technical skills icon" />
 						</h3>
 						<ul>
 							<li>DraftSight/2D CAD</li>
 							<li>Adobe lllustrator and Photoshop</li>
 							<li>Laboratory Research</li>
 							<li>Plant Physiology</li>
-
 							<li>Quality Assurance</li>
 						</ul>
 					</Col>

@@ -32,7 +32,7 @@ function Contact() {
 					<NavLink className="nav-link" onClick={() => toggleAddressHidden()}>
 						<div className="icon-div">
 							{' '}
-							<img className="footer-icon" src={locationDot} />
+							<img className="footer-icon" src={locationDot} alt="location icon" />
 						</div>
 					</NavLink>
 					<CSSTransition in={!addressHidden} timeout={300} classNames="hidden" unmountOnExit>
@@ -44,7 +44,7 @@ function Contact() {
 						<div className="icon-div">
 							<div className="icon-div">
 								{' '}
-								<img className="footer-icon" src={phone} />
+								<img className="footer-icon" src={phone} alt="phone icon" />
 							</div>
 						</div>
 					</NavLink>
@@ -57,7 +57,7 @@ function Contact() {
 						<div className="icon-div">
 							<div className="icon-div">
 								{' '}
-								<img className="footer-icon" src={envelope} />
+								<img className="footer-icon" src={envelope} alt="ennvelope icon" />
 							</div>
 						</div>
 					</NavLink>
@@ -71,7 +71,7 @@ function Contact() {
 					>
 						<div className="icon-div">
 							{' '}
-							<img className="footer-icon" src={linkedIn} />
+							<img className="footer-icon" src={linkedIn} alt="linkedin icon" />
 						</div>
 					</NavLink>
 				</NavItem>
@@ -84,7 +84,7 @@ function Contact() {
 					>
 						<div className="icon-div">
 							{' '}
-							<img className="footer-icon" src={gitHub} />
+							<img className="footer-icon" src={gitHub} alt="github icon" />
 						</div>
 					</NavLink>
 				</NavItem>
@@ -97,7 +97,7 @@ function Contact() {
 					>
 						<div className="icon-div">
 							{' '}
-							<img className="footer-icon" src={download} />
+							<img className="footer-icon" src={download} alt="download resume icon" />
 						</div>
 					</a>
 				</NavItem>
