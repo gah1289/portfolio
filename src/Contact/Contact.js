@@ -89,7 +89,12 @@ function Contact() {
 					</NavLink>
 				</NavItem>
 				<NavItem>
-					<a className="nav-link" href="/files/GMcCarthyResume.pdf" target="_blank" download>
+					<a
+						className="nav-link"
+						href="https://drive.google.com/file/d/12mb_9C6enFnV6PVIOETeFGGkrT9yLVWo/view?usp=sharing"
+						target="_blank"
+						download
+					>
 						<div className="icon-div">
 							{' '}
 							<img className="footer-icon" src={download} />
