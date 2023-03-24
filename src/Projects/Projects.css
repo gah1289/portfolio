@@ -6,6 +6,11 @@
 	margin-top: 20px;
 }
 
+.projects img {
+	width: 400px;
+	margin: auto;
+}
+
 .projects ul {
 	margin-top: 20px;
 	text-align: left;
@@ -51,10 +56,12 @@
 	border: none;
 }
 .project-title {
+	font-family: 'Nunito';
+	font-weight: 300;
 	font-size: 25px;
 	margin-top: 20px;
 	text-decoration: underline rgba(171, 191, 245, 0.3) 2px;
-	font-weight: 600;
+
 	margin-bottom: 20px;
 }
 
@@ -125,6 +132,10 @@
 		padding-left: 0;
 		padding-bottom: 50px;
 		width: 99%;
+	}
+
+	.project-title {
+		font-size: 25px;
 	}
 
 	.project-tabs {

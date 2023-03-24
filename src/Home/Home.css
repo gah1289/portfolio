@@ -29,8 +29,8 @@ body {
 }
 
 .title {
-	font-size: min(4.75vw, 79px);
-	font-weight: 600;
+	font-size: min(4.75vw, 75px);
+
 	letter-spacing: -3px;
 }
 
@@ -38,10 +38,15 @@ body {
 	padding-top: 80px;
 }
 
+.subtitle,
+.slogan,
+.title {
+	font-family: 'Nunito';
+}
+
 .slogan {
 	font-size: min(3vw, 75px);
 	letter-spacing: -1px;
-	font-weight: 600;
 }
 
 /* text morph */
@@ -95,7 +100,6 @@ body {
 	position: relative;
 	text-align: center;
 	font-size: 40px;
-	font-weight: 700;
 }
 
 .pg {
@@ -375,11 +379,15 @@ body {
 		padding-top: 20px;
 	}
 
+	.slogan {
+		font-size: 22px;
+	}
+
 	.subtitle,
 	.slogan {
 		font-weight: 400;
-		font-family: 'Nunito';
-		font-size: 22px;
+
+		font-size: 30px;
 		margin-left: 0px;
 		width: 100%;
 	}

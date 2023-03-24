@@ -27,12 +27,12 @@ function Contact() {
 
 	return (
 		<div className="contact">
-			<Navbar fill id="footer">
+			<Navbar fill id="contact">
 				<NavItem>
 					<NavLink className="nav-link" onClick={() => toggleAddressHidden()}>
 						<div className="icon-div">
 							{' '}
-							<img className="footer-icon" src={locationDot} alt="location icon" />
+							<img className="contact-icon" src={locationDot} alt="location icon" />
 						</div>
 					</NavLink>
 					<CSSTransition in={!addressHidden} timeout={300} classNames="hidden" unmountOnExit>
@@ -42,10 +42,8 @@ function Contact() {
 				<NavItem>
 					<NavLink className="nav-link phone" onClick={() => togglePhoneHidden()} href="#">
 						<div className="icon-div">
-							<div className="icon-div">
-								{' '}
-								<img className="footer-icon" src={phone} alt="phone icon" />
-							</div>
+							{' '}
+							<img className="contact-icon" src={phone} alt="phone icon" />
 						</div>
 					</NavLink>
 					<CSSTransition in={!phoneHidden} timeout={300} classNames="hidden" unmountOnExit>
@@ -55,10 +53,8 @@ function Contact() {
 				<NavItem>
 					<NavLink className="nav-link" href="mailto:gabhmccarthy@gmail.com">
 						<div className="icon-div">
-							<div className="icon-div">
-								{' '}
-								<img className="footer-icon" src={envelope} alt="ennvelope icon" />
-							</div>
+							{' '}
+							<img className="contact-icon" src={envelope} alt="ennvelope icon" />
 						</div>
 					</NavLink>
 				</NavItem>
@@ -71,7 +67,7 @@ function Contact() {
 					>
 						<div className="icon-div">
 							{' '}
-							<img className="footer-icon" src={linkedIn} alt="linkedin icon" />
+							<img className="contact-icon" src={linkedIn} alt="linkedin icon" />
 						</div>
 					</NavLink>
 				</NavItem>
@@ -84,7 +80,7 @@ function Contact() {
 					>
 						<div className="icon-div">
 							{' '}
-							<img className="footer-icon" src={gitHub} alt="github icon" />
+							<img className="contact-icon" src={gitHub} alt="github icon" />
 						</div>
 					</NavLink>
 				</NavItem>
@@ -92,21 +88,9 @@ function Contact() {
 					<a className="nav-link" href="/files/GMcCarthyResume.pdf" target="_blank" rel="noreferrer" download>
 						<div className="icon-div">
 							{' '}
-							<img className="footer-icon" src={download} alt="download resume icon" />
+							<img className="contact-icon" src={download} alt="download resume icon" />
 						</div>
 					</a>
-					{/* <a
-						className="nav-link"
-						href="https://drive.google.com/file/d/12mb_9C6enFnV6PVIOETeFGGkrT9yLVWo/view?usp=sharing"
-						target="_blank"
-						rel="noreferrer"
-						download
-					>
-						<div className="icon-div">
-							{' '}
-							<img className="footer-icon" src={download} alt="download resume icon" />
-						</div>
-					</a> */}
 				</NavItem>
 			</Navbar>
 		</div>
