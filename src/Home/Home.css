@@ -357,6 +357,7 @@ body {
 @media only screen and (max-width: 600px) {
 	body,
 	.all-body {
+		font-family: 'Roboto';
 		padding: 0;
 		padding-bottom: 50px;
 		width: 100vw;
