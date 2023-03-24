@@ -31,7 +31,7 @@ body {
 .title {
 	font-size: min(4.75vw, 75px);
 
-	letter-spacing: -3px;
+	letter-spacing: -4px;
 }
 
 .title-contact {
@@ -42,11 +42,12 @@ body {
 .slogan,
 .title {
 	font-family: 'Nunito';
+	font-weight: 500;
 }
 
 .slogan {
 	font-size: min(3vw, 75px);
-	letter-spacing: -1px;
+	letter-spacing: -2px;
 }
 
 /* text morph */
@@ -96,7 +97,7 @@ body {
 
 .subtitle {
 	margin-top: 20px;
-	letter-spacing: -1px;
+	letter-spacing: -2px;
 	position: relative;
 	text-align: center;
 	font-size: 40px;
@@ -104,20 +105,6 @@ body {
 
 .pg {
 	margin-top: 10px;
-}
-
-.btn-slide2,
-.job-title {
-	text-transform: uppercase;
-	color: #626d8d;
-	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 10px 0px;
-	background-color: rgb(229, 230, 240);
-	padding: 16px;
-	margin: 15px auto;
-	font-size: 20px;
-	border-radius: 30px;
-	width: 300px;
-	letter-spacing: 1.3px;
 }
 
 .about-me {
@@ -228,95 +215,6 @@ body {
 	left: 60px;
 }
 
-.btn-slide2 {
-	position: relative;
-	display: inline-block;
-	height: 50px;
-	width: 250px;
-	line-height: 50px;
-	padding: 0;
-	margin: 10px;
-	transition: .5s;
-}
-
-.btn-slide2:hover {
-	background: rgb(204, 152, 218);
-	background: linear-gradient(90deg, rgba(204, 152, 218, 1) 0%, rgba(91, 108, 249, 1) 100%);
-	outline: rgba(0, 0, 0, 0);
-}
-
-.btn-slide:hover span.circle,
-.btn-slide2:hover span.circle2 {
-	left: 100%;
-	margin-left: -45px;
-	background-color: #fdfdfd;
-}
-
-.btn-slide2:hover span.circle2 {
-	color: #5b6cf9;
-}
-
-.btn-slide2:hover span.title2 {
-	left: 40px;
-	opacity: 0;
-}
-
-.btn-slide:hover span.title-hover,
-.btn-slide2:hover span.title-hover2 {
-	opacity: 1;
-	left: 40px;
-}
-
-.btn-slide2 span.circle2 {
-	display: block;
-	color: rgb(229, 230, 240);
-	position: absolute;
-	float: left;
-	margin: 5px;
-	line-height: 42px;
-	height: 40px;
-	width: 40px;
-	top: 0;
-	left: 0;
-	transition: .5s;
-	border-radius: 50%;
-}
-
-.btn-slide2 span.circle2 {
-	visibility: hidden;
-}
-.btn-slide2:hover span.circle2 {
-	visibility: visible;
-}
-
-.btn-slide span.title,
-.btn-slide span.title-hover,
-.btn-slide2 span.title2,
-.btn-slide2 span.title-hover2 {
-	position: absolute;
-	left: 90px;
-	text-align: center;
-	margin: 0 auto;
-	transition: .5s;
-}
-
-.btn-slide2 span.title2,
-.btn-slide2 span.title-hover2 {
-	color: #626d8d;
-	left: 80px;
-}
-
-.btn-slide span.title-hover,
-.btn-slide2 span.title-hover2 {
-	left: 80px;
-	opacity: 0;
-}
-
-.btn-slide span.title-hover,
-.btn-slide2 span.title-hover2 {
-	color: #fff;
-}
-
 .hank:hover,
 .hopper:hover {
 	color: #5b6cf9;
@@ -386,8 +284,7 @@ body {
 	.subtitle,
 	.slogan {
 		font-weight: 400;
-
-		font-size: 30px;
+		font-size: 28px;
 		margin-left: 0px;
 		width: 100%;
 	}
