@@ -2,7 +2,7 @@ import './Home.css';
 import React, { useState, useEffect } from 'react';
 import Footer from '../Footer/Footer';
 import Skills from '../Skills/Skills';
-import $ from 'jquery';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { Container, Col, Row } from 'reactstrap';
