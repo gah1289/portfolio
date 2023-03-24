@@ -89,7 +89,13 @@ function Contact() {
 					</NavLink>
 				</NavItem>
 				<NavItem>
-					<a
+					<a className="nav-link" href="/files/GMcCarthyResume.pdf" target="_blank" rel="noreferrer" download>
+						<div className="icon-div">
+							{' '}
+							<img className="footer-icon" src={download} alt="download resume icon" />
+						</div>
+					</a>
+					{/* <a
 						className="nav-link"
 						href="https://drive.google.com/file/d/12mb_9C6enFnV6PVIOETeFGGkrT9yLVWo/view?usp=sharing"
 						target="_blank"
@@ -100,7 +106,7 @@ function Contact() {
 							{' '}
 							<img className="footer-icon" src={download} alt="download resume icon" />
 						</div>
-					</a>
+					</a> */}
 				</NavItem>
 			</Navbar>
 		</div>
