@@ -376,6 +376,7 @@ body {
 	.slogan {
 		font-size: 7vw;
 		margin-left: 15px;
+		width: 100%;
 	}
 
 	.about-me {
