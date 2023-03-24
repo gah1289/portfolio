@@ -364,8 +364,9 @@ body {
 		margin: 0;
 	}
 	.title {
-		font-size: 10vw;
-		text-align: center;
+		font-size: 40px;
+		/* text-align: center; */
+		margin-left: 0;
 	}
 
 	.title-contact {
@@ -374,8 +375,8 @@ body {
 
 	.subtitle,
 	.slogan {
-		font-size: 7vw;
-		margin-left: 15px;
+		font-size: 22px;
+		margin-left: 0px;
 		width: 100%;
 	}
 
