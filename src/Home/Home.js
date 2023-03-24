@@ -1,6 +1,6 @@
 import './Home.css';
-import React, { useState, useEffect } from 'react';
-import Footer from '../Footer/Footer';
+import React from 'react';
+
 import Skills from '../Skills/Skills';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -31,7 +31,12 @@ function Home() {
 						<div className="slogan wrapper">
 							{' '}
 							and I'm a
-							{terms.map((title, i) => <span className={`words title${i}`}> {title}</span>)}
+							{terms.map((title, i) => (
+								<span key={title} className={`words title${i}`}>
+									{' '}
+									{title}
+								</span>
+							))}
 						</div>
 						<Contact />
 					</Col>
@@ -75,7 +80,7 @@ function Home() {
 							<div className="dogs">
 								{' '}
 								<div className="hopper">
-									<img src={hopper} alt="picture of Hopper" />
+									<img src={hopper} alt="Hopper" />
 									<div id="hopper-text">
 										<span className="name">HOPPER, 5</span> <br /> - Loves Bravo TV <br /> -
 										Requires an ice tax
@@ -83,7 +88,7 @@ function Home() {
 									</div>
 								</div>
 								<div className="hank">
-									<img src={hank} alt="picture of Hank" />
+									<img src={hank} alt="Hank" />
 									<div id="hank-text">
 										<span className="name">HANK, 6mo</span>
 										<br /> - Part Boxer part shrimp <br /> - Can pick any lock <br /> - Very
@@ -96,7 +101,6 @@ function Home() {
 				</Container>
 			</div>
 			<Interests />
-			{/* <Footer /> */}
 		</div>
 	);
 }

@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import { Container, Col, Row } from 'reactstrap';
+import { Container, Row } from 'reactstrap';
 
 import './Interests.css';
 

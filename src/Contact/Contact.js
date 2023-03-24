@@ -93,6 +93,7 @@ function Contact() {
 						className="nav-link"
 						href="https://drive.google.com/file/d/12mb_9C6enFnV6PVIOETeFGGkrT9yLVWo/view?usp=sharing"
 						target="_blank"
+						rel="noreferrer"
 						download
 					>
 						<div className="icon-div">
