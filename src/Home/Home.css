@@ -235,6 +235,11 @@ body {
 #hank-text {
 	position: absolute;
 	top: 75px;
+	letter-spacing: -0.25px;
+	font-family: 'Nunito';
+	font-weight: 500;
+	width: 200px;
+	text-align: center;
 }
 
 #hopper-text:hover,
@@ -355,5 +360,10 @@ body {
 	.hank img,
 	.hopper img {
 		height: 85px;
+	}
+
+	#hopper-text,
+	#hank-text {
+		width: 45vw;
 	}
 }
