@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './Contact.css';
-import { Navbar, NavItem, NavLink, Spinner } from 'reactstrap';
+import { Navbar, NavItem, NavLink } from 'reactstrap';
 import locationDot from '../Images/location-dot.svg';
 import envelope from '../Images/envelope.svg';
 import gitHub from '../Images/github.svg';
@@ -8,7 +8,6 @@ import linkedIn from '../Images/linkedin-in.svg';
 import phone from '../Images/phone.svg';
 import download from '../Images/file-arrow-down-light.svg';
 import { CSSTransition } from 'react-transition-group';
-import axios from 'axios';
 
 function Contact() {
 	const [
@@ -23,52 +22,7 @@ function Contact() {
 		setPhoneHidden
 	] = useState(true);
 
-	const [
-		isLoading,
-		setLoading
-	] = useState(true);
-
-	const [
-		resume,
-		setResume
-	] = useState('');
-
 	const togglePhoneHidden = () => (phoneHidden ? setPhoneHidden(false) : setPhoneHidden(true));
-
-	useEffect(() => {
-		// useEffect hook
-		setTimeout(() => {
-			// simulate a delay
-			axios.get('/files/GMcCarthyResume.pdf', { responseType: 'blob' }).then((response) => {
-				setResume(response.request.responseURL);
-				setLoading(false); //set loading state
-			});
-		}, 3000);
-	}, []);
-
-	setTimeout(() => {
-		document.getElementById('animation-overlay').style.display = 'block';
-	}, 1500);
-
-	setTimeout(() => {
-		document.getElementById('animation-overlay').style.display = 'none';
-	}, 5500);
-
-	if (isLoading) {
-		return (
-			<div className="loading-dots">
-				<Spinner type="grow" className="loading">
-					{' '}
-				</Spinner>
-				<Spinner id="spin2" type="grow" className="loading">
-					{' '}
-				</Spinner>
-				<Spinner id="spin3" type="grow" className="loading">
-					{' '}
-				</Spinner>
-			</div>
-		);
-	}
 
 	return (
 		<div className="contact">
@@ -130,18 +84,18 @@ function Contact() {
 					</NavLink>
 				</NavItem>
 				<NavItem>
-					{/* <a className="nav-link" href="/files/GMcCarthyResume.pdf" target="_blank" rel="noreferrer" download>
-						<div className="icon-div">
-							{' '}
-							<img className="contact-icon" src={download} alt="download resume icon" />
-						</div>
-					</a> */}
-					<a className="nav-link" href={resume} target="_blank" rel="noreferrer" download>
+					<a className="nav-link" href="/files/GMcCarthyResume.pdf" target="_blank" rel="noreferrer" download>
 						<div className="icon-div">
 							{' '}
 							<img className="contact-icon" src={download} alt="download resume icon" />
 						</div>
 					</a>
+					{/* <a className="nav-link" href={resume} target="_blank" rel="noreferrer" download>
+						<div className="icon-div">
+							{' '}
+							<img className="contact-icon" src={download} alt="download resume icon" />
+						</div>
+					</a> */}
 				</NavItem>
 			</Navbar>
 		</div>
